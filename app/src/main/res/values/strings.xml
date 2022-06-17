@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">正交表测试工具</string>
+
+    <!--动态权限处理相关-->
+    <string name="permission_hint">我们需要获取权限，请同意，否则无法使用！</string>
+    <string name="allow">授权</string>
+    <string name="deny">拒绝</string>
+    <string name="reply_comment">\@%1$s: %2$s</string>
+    <string name="reply_hint">回复%1$s: </string>
+    <string name="copy_success">拷贝成功!</string>
+    <string name="generate_loading">正交测试用例生成中</string>
+    <string name="err_not_support">不支持该格式!!!</string>
+    <string name="err_not_character">测试用例不应该包含中文字符!!!</string>
+    <string name="err_format">测试用例格式错误!!!</string>
+    <string name="err_not_null">测试用例不能为空!!!</string>
+</resources>

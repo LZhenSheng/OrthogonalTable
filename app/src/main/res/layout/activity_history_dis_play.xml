@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+    <!--Toolbar-->
+    <include layout="@layout/tool_bar" />
+
+    <!--内容部分layout_behavior:用来控制内容区域-->
+    <LinearLayout
+        style="@style/ToolbarContent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/share_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="正交表测试法测试用例"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="测试用例表"
+                        android:textColor="#000000"/>
+
+
+                    <com.example.myapplication.view.TableView
+                        android:id="@+id/table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="8dp"
+                        app:dividerColor="#e1e1e1"
+                        app:dividerWidth="1px"
+                        app:headerColor="#00ffffff"
+                        app:headerTextColor="#111111"
+                        app:headerTextSize="10dp"
+                        app:rowHeight="36dp"
+                        app:textColor="#999999"
+                        app:textSize="10dp"
+                        app:unitColumnWidth="0dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!--        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>-->
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
